@@ -1,0 +1,11 @@
+Client ID:
+a10f168a-1d71-4ee9-b38d-37a3cf06df4e
+
+Client secret:
+ed48520436de40dbcd3da9bed4bb7a6cbd2df9cc
+
+Stripe passkey:
+pk_test_51S3us6FkLqX412WwlTF8UhBMfNturocsCKHzHg0gXqAQauKv1gX2VpzBN7FmYWXqlbPWqDA7BmtDHSccpcZYmxZl00blAFftTr
+
+MapBox:
+pk.eyJ1IjoiZGFsYWhtYXMiLCJhIjoiY21mMWcwdzk1MW1nMDJscXlwNTVlZGhlMiJ9.HBOYu_dlNVTLaYUhLYlL2g

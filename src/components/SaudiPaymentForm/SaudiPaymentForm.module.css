@@ -1,0 +1,141 @@
+@import '../../styles/propertySets.css';
+
+.root {
+  /* Parent element that contains everything in the form */
+}
+
+.heading {
+  @apply --marketplaceH4FontStyles;
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  @media (--viewportMedium) {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
+/* Payment Method Selector */
+.paymentMethodSelector {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorGrey300);
+  border-radius: 8px;
+}
+
+.paymentMethodOption {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--colorGrey300);
+  border-radius: 4px;
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover {
+    border-color: var(--colorSuccess400);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.paymentMethodDisabled {
+  opacity: 0.6;
+  background-color: var(--colorGrey100);
+
+  &:hover {
+    border-color: var(--colorGrey300);
+    cursor: not-allowed;
+  }
+}
+
+.paymentMethodDescription {
+  @apply --marketplaceBodyFontStyles;
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: var(--colorGrey700);
+}
+
+.unavailableReason {
+  display: block;
+  margin-top: 4px;
+  color: var(--colorFail);
+  font-size: 14px;
+  font-weight: var(--fontWeightMedium);
+}
+
+/* Form Sections */
+.messageSection {
+  margin-bottom: 24px;
+}
+
+.message {
+  margin-bottom: 0;
+}
+
+/* Error Handling */
+.errorContainer {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: var(--colorFailBackground);
+  border: 1px solid var(--colorFail);
+  border-radius: 4px;
+}
+
+.errorMessage {
+  @apply --marketplaceBodyFontStyles;
+  color: var(--colorFail);
+  font-weight: var(--fontWeightMedium);
+  margin: 0;
+}
+
+/* Submit Section */
+.submitContainer {
+  margin-top: 32px;
+  text-align: center;
+
+  @media (--viewportMedium) {
+    text-align: left;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  margin-bottom: 16px;
+
+  @media (--viewportMedium) {
+    width: auto;
+    margin-bottom: 12px;
+  }
+}
+
+.paymentInfo {
+  @apply --marketplaceBodyFontStyles;
+  color: var(--colorGrey700);
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (--viewportMedium) {
+    line-height: 20px;
+  }
+}
+
+/* No Payment Methods Available */
+.noPaymentMethods {
+  padding: 32px;
+  text-align: center;
+  background-color: var(--colorGrey100);
+  border-radius: 8px;
+  color: var(--colorGrey700);
+  font-weight: var(--fontWeightMedium);
+}
+
+/* Loading State */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
